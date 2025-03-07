@@ -1,0 +1,18 @@
+.confirmation-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
