@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Theme Styles */
+  .app-container {
+    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .light {
+    background: #f8f9fa;
+    color: #212529;
+  }
+  
+  .dark {
+    background: #212529;
+    color: #f8f9fa;
+  }
+  
+  /* Centered Content */
+  .container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Buttons */
+  .toggle-btn,
+  .section-btn {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .toggle-btn {
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .toggle-btn:hover {
+    background: #ffb300;
+  }
+  
+  .section-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .section-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Sections */
+  .section {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Loading State */
+  .loading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  /* Links */
+  .link {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
