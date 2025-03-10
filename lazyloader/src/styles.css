@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .light {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .light button {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark button {
+    background-color: white;
+    color: black;
+  }
+  
