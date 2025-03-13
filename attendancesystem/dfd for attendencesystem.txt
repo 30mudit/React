@@ -1,0 +1,83 @@
+Data Flow Diagrams (DFD) for Attendance Management System
+The Attendance Management System consists of different modules such as Employee Registration, Attendance Tracking, Report Generation, and Viewing Attendance. Below are the Level 0 (Context Diagram) and Level 1 DFDs explaining the system's working.
+
+Level 0 DFD (Context Diagram)
+          +---------------------+
+          |     Admin/User      |
+          +---------------------+
+                    |  
+                    |  (Register Employee, Mark Attendance, View Reports)
+                    v
+        +------------------------------------+
+        |   Attendance Management System    |
+        +------------------------------------+
+                    |  
+                    |  (Employee Details, Attendance Records)
+                    v
+          +----------------------+
+          |    Employee Database |
+          +----------------------+
+
+Entities:
+1.	Admin/User – Registers employees, marks attendance, views records, and downloads reports.
+2.	Attendance Management System – The system that stores, updates, and manages employee data.
+3.	Employees – Users whose attendance is tracked and managed.
+Processes:
+•	Register Employee: Admin adds employee details.
+•	Mark Attendance: Attendance is recorded.
+•	View Attendance Report: Users can view/download reports.
+Diagram Explanation:
+•	The Admin/User interacts with the Attendance Management System to register employees, mark attendance, view records, and download reports.
+•	The system stores employee details and updates attendance records.
+•	Employees interact indirectly, as their attendance data is updated by the system.
+
+
+
+Level 1 DFD (Detailed Data Flow)
+          +---------------------+
+          |     Admin/User      |
+          +---------------------+
+                    |
+       ---------------------------------
+       |            |                 |
+       v            v                 v
++----------------+  +----------------+  +----------------+
+|  (1.0)        |  |  (2.0)        |  |  (3.0)        |
+| Register Emp  |  | Mark Attend.  |  | View Attend. |
++----------------+  +----------------+  +----------------+
+        |                   |                 |
+        v                   v                 v
++----------------+  +----------------+  +----------------+
+| Employee DB   |  | Attendance DB  |  | Attendance DB  |
++----------------+  +----------------+  +----------------+
+
+                  +----------------+
+                  |  (4.0) Generate |
+                  |  Attendance Report |
+                  +----------------+
+                           |
+                           v
+                  +----------------+
+                  |   Download CSV  |
+                  +----------------+
+
+At Level 1, we break the system into individual processes.
+Processes & Data Flow:
+1. Employee Registration
+•	Input: Admin enters Employee ID, Name, and Email.
+•	Process: Data is validated and stored in the Employee Database.
+•	Output: Employee is successfully registered.
+2. Mark Attendance
+•	Input: Admin selects an employee and marks attendance.
+•	Process: Updates the Attendance Database with "Present" or "Absent" status.
+•	Output: Attendance is recorded.
+3. View Attendance List
+•	Input: User requests the attendance list.
+•	Process: System fetches records from the Attendance Database.
+•	Output: Displays attendance records.
+4. Download Report
+•	Input: User clicks the "Download Report" button.
+•	Process: System generates a CSV report containing employee attendance details.
+•	Output: A CSV file is downloaded.
+
+
